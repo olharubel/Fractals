@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Колірні моделі</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav-item">
+            <ul class="ul-item">
+                <li class="li-item">
+                    <a href='../pages/menu.html'>
+                        <img class="img-menu-item" src='../images/menu.png' alt="menu" />
+                    </a>
+                </li>
+                <li class="li-fractal-item">
+                    <p class="fractals-title">ПЕРЕТВОРЕННЯ КОЛІРНИХ МОДЕЛЕЙ</p>
+                </li>
+                <li class="li-item">
+                    <a href='../pages/theory.html'>
+                        <img class="img-theory-item" src='../images/theory.png' alt="theory" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="column c-left">
+                <div class="canvas-text">
+                    <canvas class="canvas-image">
+                    </canvas>
+                    <br />
+                    <span class="image-text">Оригінал</span>
+                </div>
+
+            </div>
+
+            <div class="column c-middle">
+                <div class="canvas-text">
+                    <canvas class="canvas-image">
+                    </canvas>
+                    <br />
+                    <span class="image-text">Результат</span>
+                </div>
+
+
+            </div>
+
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="showTip()">&times;</div>
+                    <h1>Підказка</h1>
+                    <p>Змінивши значення повзунка, зміниться яскравість усіх пікселів синього кольору на твоєму
+                        зображенні</p>
+                </div>
+            </div>
+
+            <div class="column c-right">
+                <div class="preferences">
+                    <label for="uploader" id="label-uploader">
+                        <img class="img-upload-item" src='../images/upload.png' alt="upload" />
+                        Вибрати зображення
+                        <input id="uploader" type="file" accept="image/*" />
+                    </label>
+
+
+
+                    <label for="HSL">Колірна модель HSL</label>
+                    <p id="HSL"></p>
+
+                    <label for="CMYK">Колірна модель CMYK</label>
+                    <p id="CMYK"></p>
+
+                    <label for="display-color">Колір вибраного пікселя</label>
+                    <div id="display-color"></div>
+
+                    <br />
+                    <br />
+
+                    <div class="slidecontainer">
+                        <div class="range-container">
+                            <label class="range-label" for="range">Яскравість по синьому кольору</label>
+
+
+
+
+                            <img class="img-question-item" src='../images/question_mark.png' alt="upload"
+                                onclick="showTip()" />
+                        </div>
+
+                        <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+                    </div>
+
+                    <button id="color-button" type="button">Застосувати</button>
+
+                    <button id="download-button-color" type="button">
+                        <img class="img-upload-item" src='../images/download.png' alt="upload" />
+                        Завантажити результат</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+</body>
+
+<script type="module" src="/scripts/color_model_main.js">
+
+</script>
+
+<script>
+    function showTip() {
+        var x = document.querySelector("#popup-1").classList.toggle("active");
+
+    }
+</script>
+
+</html>

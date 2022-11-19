@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Теоретичні відомості</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav-item">
+            <a href='../pages/menu.html'>
+                <img class="img-menu-item" src='../images/menu.png' alt="menu" />
+            </a>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'fractal-theory')" id="defaultOpen">
+                    <p class="theory-title">Фрактальні зображення</p>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'color-models-theory')">
+                    <p class="theory-title">Перетворення колірних моделей</p>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'affine-theory')">
+                    <p class="theory-title">Афінні перетворення</p>
+                </button>
+            </div>
+            <div id="fractal-theory" class="tabcontent">
+                <div class="scroller">
+                    <div class="grid-container">
+
+                        <div class="one">
+                            <div class="fractal-text">
+                                <p class="p-theory-fractal">Фракталом називається структура, що складається з
+                                    частин, які в якомусь сенсі подібні до цілого.</p>
+
+                                <span class="span-theory-fractal">
+                                    Поняття фраĸтал і фраĸтальна геометрія, що з’явилися в ĸінці 70-х, із середини
+                                    80-х міцно увійшли до ужитĸу математиĸів і програмістів. Слово фраĸтал утворено
+                                    від латинсьĸого “fractus”, що в переĸладі означає “той, що сĸладається з
+                                    фрагментів”.
+                                </span>
+                                <br /> <br />
+                                <span class="span-theory-fractal">В основі цього явища лежить дуже проста ідея:
+                                    нескінченну по красі і різноманітності множину фігур
+                                    можна отримати з відносно простих конструкцій за
+                                    допомогою всього двох операцій - копіювання і
+                                    масштабування.</span>
+                                <br /> <br />
+                                <span class="span-theory-fractal">Однією з основних властивостей фракталів є
+                                    самоподібність. </span>
+                                <br /> <br />
+                                <span class="span-theory-fractal" style="white-space: pre-line">Найчастіше фрактали
+                                    класифікують за способом побудови:
+                                    1. Геометричні (конструктивні);
+                                    2. Алгебраїчні (рекурентні, динамічні);
+                                    3. Стохастичні (випадкові)
+                                    4. IFS-фрактали</span>
+                                <br /> <br />
+                                <span class="span-theory-fractal">
+                                    Роль фраĸталів в ĸомп’ютерній графіці сьогодні велиĸа. Вони приходять на допомогу,
+                                    наприĸлад, ĸоли потрібно за допомогою деĸільĸох ĸоефіцієнтів задати лінії
+                                    і поверхні дуже сĸладної форми. З погляду ĸомп’ютерної графіĸи, фраĸтальна геометрія
+                                    незамінна під час генерації штучних хмар, гір,
+                                    поверхні морів. Фаĸтично знайдено спосіб легĸого представлення сĸладних об’єĸтів,
+                                    яĸі схожі на природні.
+                                </span>
+                                <br /> <br />
+                                <span class="span-theory-fractal">
+                                    Більше про фрактали ти можеш дізнатися нижче.
+                                </span>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="two">
+                            <div id='linkDiv'>
+                                <p class="type-theory-fractal" style="padding-left: 20px;">
+                                    Перейти до розділу:
+                                    <br /> <br />
+                                    <a href="#fractal-video" class="scrollLink">Як фрактали допоможуть тобі зрозуміти
+                                        Всесвіт?</a><br />
+                                    <a href="#three" class="scrollLink">Геометричні фраĸтали</a><br />
+                                    <a href="#four" class="scrollLink">Алгебраїчні фрактали</a><br />
+                                    <a href="#five" class="scrollLink">Стохастичні фрактали</a><br />
+                                    <a href="#six" class="scrollLink">Iterated Function System</a><br />
+                                    <a href="#seven" class="scrollLink">Корисні посилання</a><br /><br />
+                                </p>
+
+
+                            </div>
+                            <img class="img-hint-theory-item" src='../images/hint_theory.png' alt="hint" />
+                        </div>
+
+                        <div class="fractal-video" id="fractal-video">
+                            <div class="three-title">
+                                <p class="type-title"> Як фрактали допоможуть тобі зрозуміти Всесвіт? </p>
+                            </div>
+
+                            <p class="type-theory-fractal" style="padding-left: 20px;">Радимо переглянути коротке відео
+                                від BBC про фрактали: </p>
+                            <div class="video-container">
+
+                                <iframe src="https://www.youtube.com/embed/w_MNQBWQ5DI">
+
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <div class="three" id="three">
+
+                            <div class="three-title">
+                                <p class="type-title"> Геометричні фраĸтали </p>
+                            </div>
+                            <div class="three-container">
+                                <br />
+                                <span class="type-theory-fractal">
+                                    Фраĸтали цього ĸласу найнаочніші. Цей тип фраĸталів утворюється шляхом простих
+                                    геометричних побудов.
+                                    Наприĸлад, у двомірному випадĸу їх отримують за допомогою деяĸої ламаної (або
+                                    поверхні в тривимірному випадĸу),
+                                    званої генератором. За один ĸроĸ алгоритму ĸожен з відрізĸів (сĸладових ламаної)
+                                    замінюється на ламану-генератор,
+                                    у відповідному масштабі. У результаті несĸінченного повторення цієї процедури,
+                                    виходить геометричний фраĸтал.
+                                </span>
+                                <br /> <br />
+                                <span class="type-theory-fractal">
+                                    Приклади геометричних фракталів:
+                                </span>
+                                <br /> <br />
+
+                                <div class="fractal-gif-container">
+                                    <div class="box a">
+                                        <img class="fractal-gif" src="../images/Koch_curve.gif"
+                                            alt="This will display an animated GIF" />
+                                        <p>Сніжинка Коха</p>
+                                    </div>
+                                    <div class="box b">
+                                        <img class="fractal-gif" src="../images/dragon.gif"
+                                            alt="This will display an animated GIF" />
+                                        <p>"Дракон" Хартера-Хейтуея</p>
+                                    </div>
+                                    <div class="box c">
+                                        <img class="fractal-gif" src="../images/ptree-anim.gif"
+                                            alt="This will display an animated GIF" />
+                                        <p>Дерево Піфагора</p>
+                                    </div>
+                                    <div class="box d">
+                                        <img class="fractal-gif" src="../images/sierpinsli_triangle.gif"
+                                            alt="This will display an animated GIF" />
+                                        <p>Трикутник Серпінського</p>
+                                    </div>
+                                    <div class="box e">
+                                        <img class="fractal-gif" src="../images/peano_curve!.gif"
+                                            alt="This will display an animated GIF" />
+                                        <p>Лінія Пеано</p>
+                                    </div>
+                                    <div class="box f">
+                                        <img class="fractal-gif" src="../images/t_fractal.gif"
+                                            alt="This will display an animated GIF" />
+                                        <p>T-фрактал</p>
+                                    </div>
+                                </div>
+                                <br />
+
+                            </div>
+
+                            <div class="four" id="four">
+
+                                <div class="three-title">
+                                    <p class="type-title"> Алгебраїчні фраĸтали </p>
+                                </div>
+                                <div class="four-container">
+                                    <br />
+                                    <span class="type-theory-fractal">
+                                        Це найбільша група фраĸталів. Отримують їх за допомогою нелінійних процесів в
+                                        n-мірних просторах.
+                                        Найбільше вивчені двомірні процеси. Інтерпретуючи нелінійний ітераційний процес,
+                                        яĸ дисĸретну динамічну
+                                        систему, можна ĸористуватися термінологією теорії цих систем: фазовий портрет,
+                                        сталий процес, аттраĸтор
+                                        і т.д.
+                                    </span>
+                                    <br /><br />
+                                    <span class="type-theory-fractal">
+                                        Відомо, що нелінійні динамічні системи володіють деĸільĸома стійĸими станами.
+                                        Той стан, в яĸому
+                                        опинилася динамічна система після деяĸого числа ітерацій, залежить від її
+                                        початĸового стану. Тому
+                                        ĸожен стійĸий стан (або яĸ говорять – аттраĸтор) володіє деяĸою областю
+                                        початĸових станів, з яĸих
+                                        система обов’язĸово потрапить в дані ĸінцеві стани. Таĸим чином, фазовий простір
+                                        системи розбивається
+                                        на області тяжіння аттраĸторів. Яĸщо фазовим є двомірний простір, то забарвлюючи
+                                        області тяжіння різними
+                                        ĸольорами, можна отримати ĸолірний фазовий портрет цієї системи (ітераційного
+                                        процесу).
+                                        Міняючи алгоритм вибору ĸольору, можна отримати сĸладні фраĸтальні ĸартини з
+                                        химерними багатоĸолірними
+                                        узорами. Несподіванĸою для математиĸів стала можливість за допомогою примітивних
+                                        алгоритмів породжувати
+                                        дуже сĸладні нетривіальні струĸтури.
+                                    </span>
+                                    <br /> <br />
+                                    <span class="type-theory-fractal">
+                                        Приклади алгебраїчних фракталів:
+                                    </span>
+                                    <br /> <br />
+
+                                    <div class="fractal-gif-container-2">
+                                        <div class="box a">
+                                            <img class="fractal-gif" src="../images/algebraic1.gif"
+                                                alt="This will display an animated GIF" />
+                                            <p>Множина Мандельброта</p>
+                                        </div>
+                                        <div class="box b">
+                                            <img class="fractal-gif" src="../images/fractal_julia.gif"
+                                                alt="This will display an animated GIF" />
+                                            <p>Множина Жюліа</p>
+                                        </div>
+                                        <div class="box c">
+                                            <img class="fractal-gif" src="../images/julia_fractal2.gif"
+                                                alt="This will display an animated GIF" />
+                                            <p>Множина Жюліа з іншим параметром C</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="five" id="five">
+
+                                    <div class="three-title">
+                                        <p class="type-title"> Стохастичні фраĸтали </p>
+                                    </div>
+                                    <div class="five-container">
+                                        <br />
+                                        <span class="type-theory-fractal">
+                                            Стохастичні фраĸтали виходять в тому випадĸу, ĸоли в ітераційному процесі
+                                            випадĸовим чином
+                                            міняти яĸі-небудь його параметри. При цьому утворюються об’єĸти дуже схожі
+                                            на природні –
+                                            несиметричні дерева, порізані берегові лінії і таĸ далі. У зв’язĸу з цим
+                                            двовимірні
+                                            стохастичні фраĸтали дуже часто виĸористовуються під час моделювання різних
+                                            природних об’єĸтів:
+                                            рельєфу місцевості, поверхні моря тощо
+                                        </span>
+                                        <br /><br />
+
+                                        <span class="type-theory-fractal">
+                                            Приклади стохастичних фракталів:
+                                        </span>
+                                        <br /> <br />
+
+                                        <div class="fractal-gif-container-3">
+                                            <div class="box a">
+                                                <img class="fractal-gif" src="../images/plasma.gif"
+                                                    alt="This will display an animated GIF" />
+                                                <p>Плазма</p>
+                                            </div>
+                                            <div class="box b">
+                                                <img class="fractal-gif" src="../images/Animated_fractal_mountain.gif"
+                                                    alt="This will display an animated GIF" />
+                                                <p>Фрактал для відображення гірського масиву</p>
+                                            </div>
+                                            <div class="box c">
+                                                <img class="fractal-gif" src="../images/Britain_Fractal_Coastline.gif"
+                                                    alt="This will display an animated GIF" />
+                                                <p>Фрактал для відображення берегової лінії</p>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <br />
+                                    <div class="six" id="six">
+
+                                        <div class="three-title">
+                                            <p class="type-title"> Iterated Functions System </p>
+                                        </div>
+                                        <div class="six-container">
+                                            <br />
+                                            <span class="type-theory-fractal">
+                                                Метод Iterated Functions System (IFS) з’явився в середині 80-х роĸів яĸ
+                                                простий засіб отримання фраĸтальних струĸтур.
+                                            </span>
+                                            <br /><br />
+                                            <span class="type-theory-fractal">
+                                                IFS є системою деяĸого фіĸсованого ĸласу фунĸцій, що відображають одну
+                                                багатовимірну множину в іншу. Найбільш проста IFS сĸладається з афінних
+                                                перетворень:
+                                            </span>
+
+                                            <br />
+                                            <img class="ifs-image" src="../images/ifs.png"
+                                                alt="This will display an animated GIF" />
+                                            <br /><br />
+
+                                            <span class="type-theory-fractal">
+                                                Приклади виĸористання IFS для побудови фрактальних структур:
+                                            </span>
+                                            <br /> <br />
+
+                                            <div class="fractal-gif-container-3">
+                                                <div class="box a">
+                                                    <img class="fractal-gif" src="../images/ani_fern.gif"
+                                                        alt="This will display an animated GIF" />
+                                                    <p>Ітерації побудови папороті Барнслі</p>
+                                                </div>
+                                                <div class="box b">
+                                                    <img class="fractal-gif" src="../images/Barnsley_fern_1024x1024.png"
+                                                        alt="This will display an animated GIF" />
+                                                    <p>Папороть Барнслі</p>
+                                                </div>
+                                                <div class="box c">
+                                                    <img class="fractal-gif" src="../images/ani_tree.gif"
+                                                        alt="This will display an animated GIF" />
+                                                    <p>Ітерації побудови дерева</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="seven" id="seven">
+
+                                        <div class="three-title">
+                                            <p class="type-title"> Корисні посилання</p>
+                                        </div>
+                                        <br />
+                                        <div class="useful-links">
+                                            <div class="fractal-gif-container-3">
+
+                                                <div class="box a">
+                                                    <span class="type-theory-fractal">
+                                                        Ми підібрали цікаві матеріали про фрактали!
+                                                    </span>
+
+                                                    <img class="useful-image" src="../images/useful.png"
+                                                        alt="This will display an animated GIF" />
+                                                </div>
+                                                <div class="box b">
+                                                    <span class="type-theory-fractal">
+                                                        Список статей та сайтів:
+                                                    </span>
+                                                    <span class="type-theory-fractal" style="white-space: pre-line">
+                                                        <a href="https://en.wikipedia.org/wiki/Fractal"
+                                                            target="_blank">Fractals Wikipedia</a>
+                                                        <a href="https://mathigon.org/course/fractals/introduction"
+                                                            target="_blank">Introduction to fractals</a>
+                                                        <a href="https://www.diygenius.com/fractals-in-nature/"
+                                                            target="_blank">Fractals in nature</a>
+                                                        <a href="http://usefuljs.net/fractals/"
+                                                            target="_blank">Algebraic fractals generator</a>
+                                                        <a href="https://onlinefractaltools.com"
+                                                            target="_blank">Geometric fractals generator</a>
+                                                    </span>
+                                                    <br />
+                                                    <span class="type-theory-fractal">
+                                                        Список відео:
+                                                    </span>
+                                                    <span class="type-theory-fractal" style="white-space: pre-line">
+                                                        <a href="https://www.youtube.com/watch?v=DHNooAe44dY"
+                                                            target="_blank">Fractals TEDx Talks</a>
+                                                        <a href="https://www.youtube.com/watch?v=tN_eNQFcv5E"
+                                                            target="_blank">Could our universe be a fractal?</a>
+                                                        <a href="https://www.youtube.com/watch?v=56gzV0od6DU"
+                                                            target="_blank">The Mandelbrot set</a>
+                                                        <a href="https://www.youtube.com/watch?v=9UtdjVWSluo&t=278s"
+                                                            target="_blank"> How to draw fractal tree</a>
+                                                        <a href="https://www.youtube.com/watch?v=2kZv22Ip1Vs"
+                                                            target="_blank">What is fractal geometry?</a>
+                                                    </span>
+                                                </div>
+                                                <div class="box c">
+                                                    <img class="fractal-gif" src="../images/Cubes_2.gif"
+                                                        alt="This will display an animated GIF" />
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="color-models-theory" class="tabcontent">
+                <div class="scroller">
+                    <div class="grid-container">
+
+                        <div class="one">
+                            <div class="fractal-text">
+                                <p class="p-theory-fractal">Колір - це властивість матеріальних об'єктів, яка
+                                    сприймається як усвідомлене зорове відчуття та
+                                    виникає в результаті дії на око потоків видимого
+                                    електронно-магнітного випромінювання
+                                    (з довжинами хвиль від 380 до 760 нм).</p>
+
+                                <span class="span-theory-fractal">
+                                    Призначення колірної моделі - дати засоби опису кольору
+                                    в межах деякого колірного діапазону, у тому числі і для
+                                    виконання інтерполяції кольорів.
+                                </span>
+                                <br /> <br />
+                                <span class="span-theory-fractal">Існують різні моделі, оскільки із зображенням
+                                    виконуються різні дії: відображення на екран, видрук
+                                    на принтер, опрацювання кольорів, перетворення в сірі
+                                    тони, корекція яскравості, інтенсивності і т.п.</span>
+                                <br /> <br />
+                                <span class="span-theory-fractal">Запропоновано класифікувати моделі за принципом
+                                    апаратної залежності. </span>
+                                <br />
+                                <span class="span-theory-fractal" style="white-space: pre-line">
+                                    1. Апаратно-орієнтовані триколірні моделі - це RGB (αRGB, sRGB), CMY (CMYK).
+                                    2. Апаратно-незалежні триатрибутні моделі, які поділяються на:
+                                    a) перцепційні - HSV, HSL, HSІ, HSВ і т.д.
+                                    b) модифіковані - CIE XYZ, CIE Lab</span>
+                                <br /> <br />
+                                <span class="span-theory-fractal">
+                                    Колірні моделі потрібні для математичного опису спектру кольорів, видимих на екрані
+                                    монітора,
+                                    або на скануючих та друкуючих пристроях. Кольори представляються моделлю як
+                                    результат
+                                    змішування декількох базових (основних) кольорів, з яких вони складаються. Кожен
+                                    базовий
+                                    колір має свій діапазон інтенсивності. При складанні всіх базових кольорів з різною
+                                    інтенсивністю
+                                    утворюються кольори, доступні для даної моделі. Колірні діапазони моделей можуть
+                                    розрізнятися.
+                                </span>
+                                <br /> <br />
+                                <span class="span-theory-fractal">
+                                    Більше про колірні моделі ти можеш дізнатися нижче.
+                                </span>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="two">
+                            <div id='linkDiv'>
+                                <p style="padding-left: 20px;">
+                                    Перейти до розділу:
+                                    <br /> <br />
+                                    <a href="#color-video" class="scrollLink">Комп'ютерні моделі кольорів</a><br />
+                                    <a href="#three-color" class="scrollLink">Колірна модель RGB </a><br />
+                                    <a href="#four-color" class="scrollLink">Колірна модель CMYK</a><br />
+                                    <a href="#five-color" class="scrollLink">Колірна модель HSB</a><br />
+                                    <a href="#six-color" class="scrollLink">Колірна модель HSV</a><br />
+                                    <a href="#eight-color" class="scrollLink">Колірна модель HSL</a><br />
+                                    <a href="#nine-color" class="scrollLink">Колірна модель LAB</a><br />
+                                    <a href="#ten-color" class="scrollLink">Колірна модель XYZ</a><br />
+                                    <a href="#eleven-color" class="scrollLink">Перетворення колірних моделей</a><br />
+                                    <a href="#seven-color" class="scrollLink">Корисні посилання</a><br />
+                                </p>
+
+
+                            </div>
+                            <img class="img-hint-theory-item" src='../images/hint_theory.png' alt="hint" />
+                        </div>
+
+                        <div class="fractal-video" id="color-video">
+                            <div class="three-title">
+                                <p class="type-title"> Комп'ютерні моделі кольорів </p>
+                            </div>
+
+                            <p class="type-theory-fractal" style="padding-left: 20px;">Радимо переглянути лекцію
+                                про колірні моделі: </p>
+                            <div class="video-container">
+
+                                <iframe src="https://www.youtube.com/embed/QObxaTDP7Ts">
+
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <div class="three" id="three-color">
+
+                            <div class="three-title">
+                                <p class="type-title"> Колірна модель RGB </p>
+                            </div>
+                            <div class="three-container"
+                                style="display: flex; justify-content: center; align-items: center;">
+                                <br />
+
+                                <div style="width: 100%;">
+                                    <span class="type-theory-fractal" style="padding-right: 20px;">
+                                        Адитивна модель кольору найпростіша для розуміння. Вона є досить штучним
+                                        прийомом,
+                                        оскільки продиктована технологією виготовлення електронно-променевих трубок.
+                                        Це апаратно-орієнтована модель, в якій кольори описуються за допомогою складання
+                                        трьох базових кольорів – червоного, зеленого, синього – в різних пропорціях.
+                                        Тому модель RGB називають адитивною (від англ. «add» складати, додавати).
+                                        Кольори також називають колірними каналами моделі RGB.
+                                        <br /> <br />
+                                        Модель названа за першими буквами англійських слів: <br />
+                                        R (RED) – червоний; <br />
+                                        G (GREEN) – зелений; <br />
+                                        B (BLUE) – синій. <br />
+
+                                    </span> <br />
+                                    <span class="type-theory-fractal" style="padding-right: 20px;">
+                                        Недолік моделі RGB полягає в тому, що не всі кольори, утворені в ній, можна
+                                        вивести на друк.
+                                        Кольори на екрані вашого монітора можуть виглядати інакше при їх виведенні
+                                        на друк, причому
+                                        ця відзнака може виявитися принциповою, а не обумовленою низькою якістю
+                                        принтера або монітора.
+                                        Проте більше 16 млн кольорів, що представляються в RGB, виявляються цілком
+                                        достатніми для практичних потреб.
+                                    </span>
+
+
+                                </div>
+
+                                <div style="width: 30%; padding-left: 20px; text-align: center;">
+                                    <img class="color-rgb" src="../images/rgb_cube.png"
+                                        alt="This will display an animated GIF" />
+                                    <p>Колірний куб моделі RGB</p>
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="four" id="four-color">
+
+                                <div class="three-title">
+                                    <p class="type-title"> Колірна модель CMYK </p>
+                                </div>
+
+
+                                <div class="four-container"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <br />
+                                    <div style="width: 100%;">
+                                        <span class="type-theory-fractal" style="padding-right: 20px;">
+                                            Субтрактивна модель використовується для підготовки не екранних, а
+                                            друкованих
+                                            зображень, тобто для пристроїв, які реалізують принцип поглинання
+                                            (віднімання)
+                                            кольорів. Друковані зображення відрізняються від екранних зображень тим, що
+                                            їх
+                                            бачать не у світлі, що проходить, а у відбитому світлі, оскільки аркуш
+                                            паперу не
+                                            випромінює світло.
+                                            Базовими кольорами моделі CMY є кольори, які виходять у результаті
+                                            віднімання
+                                            основних кольорів RGB від білого. Звідси назва моделі субтрактивна (від
+                                            англ.
+                                            «to subtract» – віднімати).
+                                            <br />
+                                            Базові кольори моделі CMY: <br />
+                                            C (CYAN) – блакитний = білий - червоний = зелений + синій; <br />
+                                            M (MAGENTA) – пурпурний = білий - зелений = червоний + синій; <br />
+                                            Y (YELLOW) –
+                                            жовтий = білий - синій = червоний + зелений.
+                                        </span> <br /><br />
+                                        <span class="type-theory-fractal" style="padding-right: 20px;">
+                                            Істотною проблемою в поліграфії є чорний колір. Теоретично його можна
+                                            отримати
+                                            змішуванням трьох доповнювальних фарб, але на практиці змішування цих трьох
+                                            кольорів дає невизначений темно-коричневий колір. Отримати на папері чорний
+                                            колір шляхом змішування трьох фарб складно і незручно через те, що реальні
+                                            фарби
+                                            не є абсолютно чистими, через великі витрати дорогого чорнила та високу
+                                            вологість паперу на струменевих принтерах, а також через небажані візуальні
+                                            ефекти, тому в принтерах до базових фарб CMY доводиться додавати ще й фарбу
+                                            чорного кольору (blacK). Така модель кольору називається CMYK. При друці
+                                            малюнка
+                                            на кольоровому принтері з чотирма кольорами драйвер принтера перетворює
+                                            RGB-малюнок у модель CMYK.
+                                        </span> <br /><br />
+                                        <span class="type-theory-fractal" style="padding-right: 20px;">
+                                            Колірне охоплення системи CMYK менше, ніж колірне охоплення системи RGB.
+                                        </span>
+
+                                    </div>
+
+                                    <div style="width: 30%; padding-left: 20px; text-align: center;">
+                                        <img class="color-rgb" src="../images/cmyclrs2.png"
+                                            alt="This will display an animated GIF" />
+                                        <p>Колірний куб моделі CMYK</p>
+                                    </div>
+
+
+
+                                </div>
+                                <br />
+
+                                <div class="five" id="five-color">
+
+                                    <div class="three-title">
+                                        <p class="type-title"> Колірна модель HSB </p>
+                                    </div>
+
+
+                                    <div class="five-container"
+                                        style="display: flex; justify-content: center; align-items: center;">
+                                        <br />
+                                        <div style="width: 100%;">
+                                            <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                Cистема НSВ - представлення кольору у вигляді
+                                                тону, насиченості і яскравості.
+                                                HSB не строга математична модель, але вона дуже зручна для підбору
+                                                відтінків і кольорів. Будь-який колір в
+                                                моделі HSB визначається своїм колірним тоном (власне кольором),
+                                                насиченістю (тобто відсотком доданої до кольору білої фарби) і
+                                                яскравістю (відсотком доданої чорної фарби).
+                                                <br />
+                                            </span> <br /><br />
+                                            <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                Тон – це основний колір, який можна виділити в кольорі (довжина хвилі,
+                                                яка переважає при випромінюванні).
+                                                Насиченість кольору характеризує його «чистоту»: чим вона більша, тим
+                                                колір «чистіший» (тобто ближче до тонової хвилі). Нульова насиченість
+                                                відповідає сірому кольору, а максимальна насиченість – найбільш
+                                                яскравому варіанту даного кольору. Можна вважати, що зменшення
+                                                насиченості відповідає додаванню білої фарби. У білому кольорі
+                                                насиченість дорівнює 0, оскільки неможливо виділити його колірний тон.
+                                                Під яскравістю розуміється ступінь освітленості. При нульовій яскравості
+                                                колір стає чорним. Максимальна яскравість при максимальній насиченості
+                                                дають найбільш виразний варіант даного кольору. Можна вважати, що
+                                                яскравість показує величину чорного відтінку доданого до кольору.
+                                                Яскравість чорного кольору – 0, а білого – 1.
+                                            </span> <br /><br />
+                                            <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                Перевага НSВ перед іншими моделями полягає в тому, що вона більше
+                                                відповідає природі кольору і добре узгоджується з моделлю сприйняття
+                                                кольорів людиною.
+                                                <br />
+                                                Недолік НSВ полягає в тому, що для роботи на моніторах комп’ютерів її
+                                                необхідно перетворювати на систему RGB, а для чотирьох кольорового друку
+                                                – в систему СМУК.
+                                            </span>
+
+                                        </div>
+
+                                        <div style="width: 30%; padding-left: 20px; text-align: center;">
+                                            <img class="color-rgb" src="../images/hsb_model.png"
+                                                alt="This will display an animated GIF" />
+                                            <p>Графічне зображення моделі HSB</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+
+
+                                <div class="six" id="six-color">
+
+                                    <div class="three-title">
+                                        <p class="type-title"> Колірна модель HSV </p>
+                                    </div>
+
+
+                                    <div class="six-container"
+                                        style="display: flex; justify-content: center; align-items: center;">
+                                        <br />
+                                        <div style="width: 100%;">
+                                            <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                Модель HSV зручно представляти
+                                                у вигляді світлової шестигранної піраміди. При цьому по вертикальній
+                                                осі відкладається значення V, а відстань від осі до бічної грані в
+                                                горизонтальному перетині відповідає параметру S (за діапазон зміни
+                                                цих величин приймається інтервал від нуля до одиниці).
+                                                Шестикутник, що лежить в основі піраміди, є проекцією колірного куба
+                                                в напрямку його головної діагоналі. Тон кольору H задається кутом,
+                                                відкладеним навколо вертикальної осі, починаючи від червоного. Точки
+                                                на самій окружності відповідають чистим (максимально насиченим)
+                                                кольорам. Точка в центрі відповідає нейтральному кольору мінімальної
+                                                насиченості (білий, сірий, чорний – це залежить від яскравості).
+                                                <br />
+                                            </span> <br /><br />
+                                            <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                Тобто можна сказати, що кут нахилу вектора визначає відтінок,
+                                                довжина вектора – насиченість кольору. Величина S змінюється від
+                                                нуля на осі конуса, до одиниці на його гранях. Значенню V=0
+                                                відповідає вершина піраміди (чорний колір), значенню V=1 – основа
+                                                піраміди; кольори при цьому найбільш інтенсивні. Точка з
+                                                координатами V=1, S=0 – центр основи піраміди (відповідає білому
+                                                кольору). Проміжні значення координати V при S=0 (тобто на осі
+                                                піраміди) відповідають сірим кольорами, якщо S=0, то значення
+                                                відтінку H вважається невизначеним, S=1, якщо точка лежить на бічній
+                                                грані піраміди.
+                                            </span> <br /><br />
+                                            <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                Колірна модель HSV (тон, насиченість, значення кольору) була
+                                                розроблена з метою забезпечення художника засобами інтуїтивного
+                                                вибору кольору.
+                                            </span>
+
+                                        </div>
+
+                                        <div style="width: 30%; padding-left: 20px; text-align: center;">
+                                            <img class="color-rgb"
+                                                src="../images/HSV-color-space-Hue-saturation-value.png"
+                                                alt="This will display an animated GIF" />
+                                            <p>Графічне зображення моделі HSV</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+
+                                <div class="eight" id="eight-color">
+                                    <div class="three-title">
+                                        <p class="type-title"> Колірна модель HSL </p>
+                                    </div>
+                                    <div class="eight-container"
+                                        style="display: flex; justify-content: center; align-items: center;">
+
+                                        <div style="padding-left: 20px;">
+                                            <span class="type-theory-fractal">
+                                                Розширенням колірної моделі HSV/HSB є HLS. Параметрами якої є
+                                                Hue, Lightness, Saturation, відповідно: кольоровий тон,
+                                                кількість світла(освітленість), насиченість. Різниця
+                                                між моделями HSV/HSB і HLS полягає в заміні нелінійного
+                                                компоненту «яскравість» на лінійний компонент «освітлення».
+                                                <br />
+                                            </span> <br /><br />
+                                            <span class="type-theory-fractal">
+                                                Ця модель утворює простір у формі подвійного конуса. Колірний
+                                                тон задається кутом повороту навколо вертикальної осі конусів.
+                                                За початок відліку прийнятий синій колір. Кольори йдуть у
+                                                спектральному порядку і замикаються пурпуровим. Отже, по
+                                                вертикальній осі відкладається L (освітленість), а інші два
+                                                параметри задаються як і в HSV/HSB. Ця модель утворює
+                                                підпростір, що представляє собою подвійний конус, у якому чорний
+                                                колір задається вершиною нижнього конуса і відповідає значенню
+                                                L=0, білий колір максимальної інтенсивності задається вершиною
+                                                верхнього конуса і відповідає значенню L=1. Максимально
+                                                інтенсивні кольорові тони відповідають основі конуса з L=0,5, що
+                                                не зовсім зручно. Тон кольору H, аналогічно системі HSV/HSB,
+                                                задається кутом повороту. Насиченість S змінюється в межах від 0
+                                                до 1 і задається відстанню від вертикальної осі L до бічної
+                                                поверхні конуса. Тобто максимально насичені кольори
+                                                розташовуються при L=0,5 і S=1.
+                                            </span> <br /><br />
+                                            <span class="type-theory-fractal">
+                                                HSL добре пристосована для опису кольорів таким чином, як це
+                                                властиво людині.
+                                            </span>
+
+                                        </div>
+
+                                        <div style="width: 30%; padding-left: 20px; text-align: center;">
+                                            <img class="color-rgb" src="../images/HSL_color_solid_dblcone.png"
+                                                alt="This will display an animated GIF" />
+                                            <p>Графічне зображення моделі HSL</p>
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                    <div class="nine" id="nine-color">
+                                        <div class="three-title">
+                                            <p class="type-title"> Колірна модель LAB </p>
+                                        </div>
+                                        <div class="nine-container"
+                                            style="display: flex; justify-content: center; align-items: center;">
+
+                                            <div style="padding-left: 20px;">
+                                                <span class="type-theory-fractal">
+                                                    Модель LAB базується на людському сприйнятті кольору. При розробці
+                                                    моделі
+                                                    LАВ переслідувалася мета математичного коректування нелінійності
+                                                    сприйняття кольору людиною.
+                                                    <br />
+                                                </span> <br /><br />
+                                                <span class="type-theory-fractal">
+                                                    Будь-який колір у колірній моделі LАВ обумовлюється параметрами L –
+                                                    яскравість (Lightness) і хроматичними складовими – двома декартовими
+                                                    координатами: а, (змінюється від зеленого до червоного, через сірий
+                                                    і b (змінюється від синього до яскраво жовтого через сірий). L
+                                                    здійснює контроль за яскравістю кольорів, утворених а і b.
+                                                    Білий колір співставляється з максимальною інтенсивністю. L лежать в
+                                                    межах 0-100, а і b в межах [-200;200]. Якщо a і b рівні 0, змінюючи
+                                                    L, отримуємо зображення, що містить градації сірого (grayscale).
+                                                </span> <br /><br />
+                                                <span class="type-theory-fractal">
+                                                    Оскільки, яскравість у моделі LАВ цілком відділена від кольору, то
+                                                    це робить модель зручною для регулювання тонової характеристики
+                                                    (підвищення контрасту, виправлення похибки тонових діапазонів) і
+                                                    видалення кольорового шуму (у т.ч. розмивка растру і видалення
+                                                    регулярної структури зображень в форматі JPEG), різкості та інших
+                                                    тонових характеристик зображення.
+                                                </span>
+
+                                            </div>
+
+                                            <div style="width: 30%; padding-left: 20px; text-align: center;">
+                                                <img class="color-rgb" src="../images/cielab.png"
+                                                    alt="This will display an animated GIF" />
+                                                <p>Графічне зображення моделі LAB</p>
+                                            </div>
+                                        </div>
+                                        <br />
+
+                                        <div class="ten" id="ten-color">
+                                            <div class="three-title">
+                                                <p class="type-title"> Колірна модель XYZ </p>
+                                            </div>
+                                            <div class="ten-container"
+                                                style="display: flex; justify-content: center; align-items: center;">
+
+                                                <div style="padding-left: 20px;">
+                                                    <span class="type-theory-fractal">
+                                                        Колірний простір моделі кольору XYZ являє собою криволінійний
+                                                        конус з вершиною в початку колірних координат. У міру віддалення
+                                                        від вершини освітлення кольорів відповідних точок, що лежать
+                                                        усередині цього конуса, зростає.
+                                                        <br />
+                                                    </span> <br /><br />
+                                                    <span class="type-theory-fractal">
+                                                        На кольоровій діаграмі представлені не всі кольори простору XYZ,
+                                                        але для порівняння колірних обхватів і перетворення колірних
+                                                        просторів, заради яких і створювалася ця колірна модель, фактор
+                                                        освітленості
+                                                        відтінків можна не розглядати.
+                                                    </span> <br /><br />
+                                                </div>
+
+                                                <div style="width: 30%; padding-left: 20px; text-align: center;">
+                                                    <img class="color-rgb" src="../images/xyz_model.png"
+                                                        alt="This will display an animated GIF" />
+                                                    <p>Графічне зображення моделі XYZ</p>
+                                                </div>
+                                            </div>
+                                            <br />
+
+                                            <div class="eleven" id="eleven-color">
+                                                <div class="three-title">
+                                                    <p class="type-title"> Перетворення колірних моделей </p>
+                                                </div>
+                                                <br />
+                                                <div class="eleven-container"
+                                                    style="display: flex; justify-content: center; align-items: center; padding-left: 20px; padding-right: 20px;">
+                                                    <span class="type-theory-fractal">
+                                                        Потреба перетворення зображення з однієї колірної моделі в
+                                                        іншу виникає досить часто, особливо якщо зображення
+                                                        готується для друку. До прикладу, на деяких етапах створення
+                                                        документа застосування колірної моделі RGB є неминучим (коли
+                                                        колірна модель RGB використовується сканером, цифровою
+                                                        камерою), але у документа, призначеного для друку, кінцевою
+                                                        колірною моделлю повинна бути модель CMYK. Звідси виникає
+                                                        необхідність конвертації моделей.
+                                                        <br />
+                                                    </span> <br /><br />
+                                                    <span class="type-theory-fractal">
+                                                        Переходи між колірними моделями завжди пов’язані з якимись
+                                                        втратами кольорів через невідповідність колірного простору
+                                                        моделей. У моделі CMYK неможливо відобразити дуже яскраві
+                                                        кольори моделі RGB, модель RGB, в свою чергу, не здатна
+                                                        передати темні відтінки моделі CMYK, оскільки природа
+                                                        кольору різна. На жаль, втрати, спричинені перетворенням
+                                                        моделей, непоправні.
+                                                    </span> <br /><br />
+                                                </div>
+                                                <br />
+
+                                                <div class="seven" id="seven-color">
+
+                                                    <div class="three-title">
+                                                        <p class="type-title"> Корисні посилання</p>
+                                                    </div>
+                                                    <br />
+                                                    <div class="useful-links">
+                                                        <div class="fractal-gif-container-3">
+
+                                                            <div class="box a">
+                                                                <span class="type-theory-fractal">
+                                                                    Ми підібрали цікаві матеріали про колірні моделі!
+                                                                </span>
+
+                                                                <img class="useful-image" src="../images/useful.png"
+                                                                    alt="This will display an animated GIF" />
+                                                            </div>
+                                                            <div class="box b">
+                                                                <span class="type-theory-fractal">
+                                                                    Список статей та сайтів:
+                                                                </span>
+                                                                <span class="type-theory-fractal"
+                                                                    style="white-space: pre-line">
+                                                                    <a href="https://en.wikipedia.org/wiki/Color_model"
+                                                                        target="_blank">Color model Wikipedia</a>
+                                                                    <a href="https://programmingdesignsystems.com/color/color-models-and-color-spaces/index.html"
+                                                                        target="_blank">Color models and color
+                                                                        spaces</a>
+                                                                    <a href="https://medium.com/swlh/converting-between-color-models-5cb7e2d12e10"
+                                                                        target="_blank">Converting between color
+                                                                        models</a>
+                                                                    <a href="https://www.tutorialandexample.com/color-models-in-computer-graphics"
+                                                                        target="_blank">Color models in computer
+                                                                        graphics</a>
+                                                                    <a href="https://www.w3schools.com/colors/colors_converter.asp"
+                                                                        target="_blank">Color converter</a>
+                                                                </span>
+                                                                <br />
+                                                                <span class="type-theory-fractal">
+                                                                    Список відео:
+                                                                </span>
+                                                                <span class="type-theory-fractal"
+                                                                    style="white-space: pre-line">
+                                                                    <a href="https://www.youtube.com/watch?v=FshEXrd28qw"
+                                                                        target="_blank">Color models</a>
+                                                                    <a href="https://www.youtube.com/watch?v=HL2rmlcx8zo"
+                                                                        target="_blank">Color models. Color image
+                                                                        processing</a>
+
+                                                                </span>
+                                                            </div>
+                                                            <div class="box c">
+                                                                <img class="fractal-gif" src="../images/color_wheel.gif"
+                                                                    alt="This will display an animated GIF" />
+                                                            </div>
+
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="affine-theory" class="tabcontent">
+                <div class="scroller">
+                    <div class="grid-container">
+
+                        <div class="one">
+                            <div class="fractal-text">
+                                <p class="p-theory-fractal">Рух об'єкта в КГ трактується як зміна його
+                                    просторового положення в часі.
+                                    Математичною основою задачі створення рухомих
+                                    зображень у КГ є афінні перетворення.</p>
+
+                                <span class="span-theory-fractal">
+                                    За видом функції перетворення розрізняють лінійні та
+                                    нелінійні перетворення
+                                </span>
+
+                                <br />
+                                <span class="span-theory-fractal" style="white-space: pre-line">
+                                    Властивості афінних перетворень:
+                                    1. n-вимірний об’єкт відображається в n-вимірний, точка – в точку, лінія – в лінію,
+                                    поверхня – в поверхню;
+                                    2. зберігається паралельність ліній і площин;
+                                    3. зберігаються пропорції паралельних об’єктів  (довжин відрізків на паралельних
+                                    прямих
+                                    і площина паралельних площинах).
+                                </span>
+                                <br /> <br />
+
+                                <span class="span-theory-fractal">
+                                    Більше про афінні перетворення ти можеш дізнатися нижче.
+                                </span>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="two">
+                            <div id='linkDiv'>
+                                <p style="padding-left: 20px;">
+                                    Перейти до розділу:
+                                    <br /> <br />
+                                    <a href="#affine-video" class="scrollLink">Що таке афінні перетворення? </a><br />
+                                    <a href="#three-affine" class="scrollLink">Афінні перетворення ĸоординат на площині
+                                    </a><br />
+                                    <a href="#four-affine" class="scrollLink">Зсув об'єкта</a><br />
+                                    <a href="#five-affine" class="scrollLink">Масштабування об'єкта</a><br />
+                                    <a href="#six-affine" class="scrollLink">Поворот об'єкта</a><br />
+                                    <a href="#eight-affine" class="scrollLink">Визначення матриці перетворень</a><br />
+                                    <a href="#seven-affine" class="scrollLink">Корисні посилання</a><br />
+                                </p>
+
+
+                            </div>
+                            <img class="img-hint-theory-item" src='../images/hint_theory.png' alt="hint" />
+                        </div>
+
+                        <div class="fractal-video" id="affine-video">
+                            <div class="three-title">
+                                <p class="type-title">Що таке афінні перетворення? </p>
+                            </div>
+
+                            <p class="type-theory-fractal" style="padding-left: 20px;">Радимо переглянути лекцію
+                                про афінні перетворення: </p>
+                            <div class="video-container">
+
+                                <iframe src="https://www.youtube.com/embed/E3Phj6J287o">
+
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <div class="three" id="three-affine">
+
+                            <div class="three-title">
+                                <p class="type-title">Афінні перетворення ĸоординат на площині </p>
+                            </div>
+                            <br />
+                            <div class="three-container"
+                                style="display: flex; justify-content: center; align-items: center;">
+
+
+                                <div style="width: 50%;">
+                                    <span class="type-theory-fractal" style="padding-right: 20px;">
+                                        (X, Y) – двовимірна система ĸоординат, <br />
+                                        (x, y) – ĸоординати старої системи в новій системі ĸоординат.<br />
+
+                                        <img src="../images/affine_1.png" alt="This will display an animated GIF" />
+                                        <br />
+
+                                    </span> <br />
+                                </div>
+
+                                <div style="width: 50%; padding-left: 20px; text-align: center;">
+                                    <span class="type-theory-fractal" style="padding-right: 20px;">
+                                        Загальний вигляд афінного перетворення: <br />
+                                        <img src="../images/affine_2.png" alt="This will display an animated GIF" />
+                                        <br />
+                                        де A, B, C, D, E, F – ĸонстанти.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <br />
+                            <div class="four" id="four-affine">
+
+                                <div class="three-title" style="background-color: #EFD195;">
+                                    <p class="type-title"> Найпростіші афінні перетворення об’єĸта на площині</p>
+                                </div>
+
+                                <div class="three-title">
+                                    <p class="type-title"> Зсув об’єĸта </p>
+                                </div>
+
+                                <div class="four-container"
+                                    style="display: flex; justify-content: center; align-items: center;">
+                                    <br />
+                                    <div style="width: 35%;">
+                                        <span class="type-theory-fractal" style="padding-right: 20px;">
+                                            Зсув об'єкта задається формулами<br />
+
+                                            <img src="../images/affine_3.png" alt="This will display an animated GIF" />
+                                            <br />
+
+                                        </span> <br />
+                                    </div>
+
+                                    <div style="width: 35%; padding-left: 20px; text-align: center;">
+                                        <span class="type-theory-fractal" style="padding-right: 20px;">
+                                            або матрицею: <br />
+                                            <img src="../images/affine4.png" alt="This will display an animated GIF" />
+                                            <br />
+
+                                        </span>
+                                    </div>
+
+                                    <div style="width: 30%; padding-left: 20px; text-align: center;">
+                                        <span class="type-theory-fractal" style="padding-right: 20px;">
+                                            Зсув об'єкта
+                                            <br />
+                                            <img src="../images/affine5.png" alt="This will display an animated GIF" />
+                                            <br />
+
+                                        </span>
+                                    </div>
+
+                                </div>
+                                <br />
+
+
+                                <br />
+                                <div class="five" id="five-affine">
+
+
+                                    <div class="three-title">
+                                        <p class="type-title"> Масштабування об’єĸта </p>
+                                    </div>
+
+                                    <div class="five-container"
+                                        style="display: flex; justify-content: center; align-items: center;">
+                                        <br />
+                                        <div style="width: 35%;">
+                                            <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                Масштабування об'єкта задається формулами<br />
+
+                                                <img src="../images/affine6.png"
+                                                    alt="This will display an animated GIF" />
+                                                <br />
+
+                                            </span> <br />
+                                        </div>
+
+                                        <div style="width: 35%; padding-left: 20px; text-align: center;">
+                                            <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                або матрицею: <br />
+                                                <img src="../images/affine7.png"
+                                                    alt="This will display an animated GIF" />
+                                                <br />
+
+                                            </span>
+                                        </div>
+
+                                        <div style="width: 30%; padding-left: 20px; text-align: center;">
+                                            <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                Масштабування об'єкта
+                                                <br />
+                                                <img src="../images/affine8.png"
+                                                    alt="This will display an animated GIF" />
+                                                <br />
+
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <br />
+
+                                    <div class="six" id="six-affine">
+
+
+                                        <div class="three-title">
+                                            <p class="type-title"> Поворот об’єĸта </p>
+                                        </div>
+
+                                        <div class="six-container"
+                                            style="display: flex; justify-content: center; align-items: center;">
+                                            <br />
+                                            <div style="width: 35%;">
+                                                <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                    Поворот об'єкта відносно центру ĸоординат на ĸут α задається
+                                                    формулами<br />
+
+                                                    <img src="../images/affine9.png"
+                                                        alt="This will display an animated GIF" />
+                                                    <br />
+
+                                                </span> <br />
+                                            </div>
+
+                                            <div style="width: 35%; padding-left: 20px; text-align: center;">
+                                                <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                    або матрицею: <br />
+                                                    <img src="../images/affine10.png"
+                                                        alt="This will display an animated GIF" />
+                                                    <br />
+
+                                                </span>
+                                            </div>
+
+                                            <div style="width: 30%; padding-left: 20px; text-align: center;">
+                                                <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                    Поворот об'єкта
+                                                    <br />
+                                                    <img src="../images/affine11.png"
+                                                        alt="This will display an animated GIF" />
+                                                    <br />
+
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="eight" id="eight-affine">
+
+
+                                            <div class="three-title">
+                                                <p class="type-title"> Визначення матриці перетворень </p>
+                                            </div>
+
+                                            <div class="six-container"
+                                                style="display: flex; justify-content: center; align-items: center;">
+                                                <br />
+                                                <div style="width: 50%;">
+                                                    <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                        Сĸладним (ĸомбінованим) називається перетворення, яĸе містить
+                                                        ланцюжоĸ базових перетворень (не менше двох). Зауважимо, що
+                                                        майже всі афінні перетворення залежать від порядĸу їх виĸонання.
+                                                        <br />
+                                                    </span> <br />
+                                                </div>
+
+                                                <div style="width: 50%; padding-left: 20px; text-align: center;">
+                                                    <span class="type-theory-fractal" style="padding-right: 20px;">
+                                                        Найчастіше на праĸтиці для визначення матриці перетворень
+                                                        виĸористовують рівняння:
+                                                        <br />
+                                                        <img src="../images/affine12.png"
+                                                            alt="This will display an animated GIF" />
+                                                        <br />
+                                                        що випливає із рівняння афінних перетворень K* = KM
+                                                        де K – матриця ĸоординат об’єĸту до
+                                                        перетворення, K* – після перетворення, М – матриця перетворення.
+                                                    </span>
+                                                </div>
+                                            </div>
+
+
+                                            <br />
+
+                                            <div class="seven" id="seven-affine">
+
+                                                <div class="three-title">
+                                                    <p class="type-title"> Корисні посилання</p>
+                                                </div>
+                                                <br />
+                                                <div class="useful-links">
+
+                                                    <div class="fractal-gif-container-3">
+
+                                                        <div class="box a">
+                                                            <span class="type-theory-fractal">
+                                                                Ми підібрали цікаві матеріали про афінні перетворення!
+                                                            </span>
+
+                                                            <img class="useful-image" src="../images/useful.png"
+                                                                alt="This will display an animated GIF" />
+                                                        </div>
+                                                        <div class="box b">
+                                                            <span class="type-theory-fractal">
+                                                                Список статей та сайтів:
+                                                            </span>
+                                                            <span class="type-theory-fractal"
+                                                                style="white-space: pre-line">
+                                                                <a href="https://en.wikipedia.org/wiki/Affine_transformation"
+                                                                    target="_blank">Affine transformation Wikipedia</a>
+                                                                <a href="https://homepages.inf.ed.ac.uk/rbf/HIPR2/affine.htm"
+                                                                    target="_blank">Affine transformation</a>
+                                                                <a href="https://www.algorithm-archive.org/contents/affine_transformations/affine_transformations.html"
+                                                                    target="_blank">Affine transformation with
+                                                                    examples</a>
+                                                                <a href="https://www.geogebra.org/m/Fq8zyEgS"
+                                                                    target="_blank">Affine transformation tool</a>
+
+                                                            </span>
+                                                            <br />
+                                                            <span class="type-theory-fractal">
+                                                                Список відео:
+                                                            </span>
+                                                            <span class="type-theory-fractal"
+                                                                style="white-space: pre-line">
+                                                                <a href="https://www.youtube.com/watch?v=KAW7lXxMSb4"
+                                                                    target="_blank">Affine transformation</a>
+                                                                <a href="https://www.youtube.com/watch?v=iupGRvJf7IQ"
+                                                                    target="_blank">Affine transformation on images</a>
+
+                                                            </span>
+                                                        </div>
+                                                        <div class="box c">
+                                                            <img class="fractal-gif"
+                                                                src="../images/affine_transformation.gif"
+                                                                alt="This will display an animated GIF" />
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+
+</body>
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    $(document).ready(function () {
+        $("a.scrollLink").click(function (event) {
+            event.preventDefault();
+            $("html, body").animate({
+                scrollTop: $($(this).attr("href")).offset().top
+            }, 500);
+        });
+    });
+</script>
+<script>
+
+    document.getElementById("defaultOpen").click();
+</script>
+
+</html>

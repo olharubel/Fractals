@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Фрактальні зображення</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav-item">
+            <ul class="ul-item">
+                <li class="li-item">
+                    <a href='../pages/menu.html'>
+                        <img class="img-menu-item" src='../images/menu.png' alt="menu" />
+                    </a>
+                </li>
+                <li class="li-fractal-item">
+                    <p class="fractals-title">ФРАКТАЛЬНІ ЗОБРАЖЕННЯ</p>
+                </li>
+                <li class="li-item">
+                    <a href='../pages/theory.html'>
+                        <img class="img-theory-item" src='../images/theory.png' alt="theory" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="column left">
+                <canvas class="fractal-canvas"></canvas>
+            </div>
+            <div class="column right">
+                <div class="fractal-preferences">
+                    <label for="type-fractal">Обери тип фракталу:</label>
+                    <div class="type-fractal">
+                        <div class="dropdown">
+                            <div class="select">
+                                <span class="selected">Дерево Піфагора</span>
+                                <div class="caret"></div>
+                            </div>
+                            <ul class="menu">
+                                <li class="active">Дерево Піфагора</li>
+                                <li>Острів Мінковського</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+
+                    <label for="iteration-amount">Введи кількість ітерацій:</label>
+                    <br>
+                    <input type="number" id="iteration-amount" name="iteration-amount" min="1" max="10">
+                    <br>
+                    <br>
+
+                    <label for="coordinates">Введи координати центру фракталу:</label>
+                    <br>
+                    <div class="coordinates">
+                        <label for="X">X</label>
+                        <input type="number" id="X" name="X" min="0" max="700">
+
+                        <label for="Y">Y</label>
+                        <input type="number" id="Y" name="Y" min="0" max="700">
+
+                    </div>
+
+                    <br>
+                    <br>
+
+
+                    <label for="line-style">Обери стиль лінії:</label>
+                    <div class="line-style">
+                        <div class="dropdown">
+                            <div class="select">
+                                <span class="selected">Суцільна</span>
+                                <div class="caret"></div>
+                            </div>
+                            <ul class="menu">
+                                <li class="active">Суцільна</li>
+                                <li>Пунктирна</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <label for="line-color">Обери колір лінії:</label>
+                    <div class="line-color">
+                        <div class="dropdown">
+                            <div class="select">
+                                <span class="selected">#000000</span>
+                                <div class="caret"></div>
+                            </div>
+                            <ul class="menu">
+                                <li class="active">#000000</li>
+                                <li>#95B3EF</li>
+                                <li>#EFD195</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br> <br>
+                    <button id="apply-button" type="button">Застосувати</button>
+                    <br>
+                    <button id="reset-button" type="reset">Скинути</button>
+                    <br>
+                    <button id="download-button" type="button">
+                        <img class="img-upload-item" src='../images/download.png' alt="upload" />
+                        Завантажити результат</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+
+<script type="module" src="/scripts/fractal_main.js"></script>
+
+</html>

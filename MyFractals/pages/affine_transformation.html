@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Афінні перетворення</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav-item">
+            <ul class="ul-item">
+                <li class="li-item">
+                    <a href='../pages/menu.html'>
+                        <img class="img-menu-item" src='../images/menu.png' alt="menu" />
+                    </a>
+                </li>
+                <li class="li-fractal-item">
+                    <p class="fractals-title">АФІННІ ПЕРЕТВОРЕННЯ</p>
+                </li>
+
+                <li class="li-item">
+                    <a href='../pages/theory.html'>
+                        <img class="img-theory-item" src='../images/theory.png' alt="theory" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="affine-row">
+            <div class="column a-left">
+
+                <canvas class="canvas-affine">
+                </canvas>
+
+
+            </div>
+
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="showTip()">&times;</div>
+                    <h1>Підказка</h1>
+                    <p>Тобі потрібно ввести дві вершини трикутника. Третя вершина правильного трикутника обчислиться
+                        автоматично.
+
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="popup" id="popup-error">
+                <div class="overlay-error"></div>
+                <div class="content-error">
+                    <div class="close-btn" onclick="showError()">&times;</div>
+                    <h1>Помилка</h1>
+                    <p>Значення координат вершин трикутника не можуть бути однаковими. Будь ласка, введи нові
+                        координати.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="popup" id="popup-error-empty">
+                <div class="overlay-error"></div>
+                <div class="content-error">
+                    <div class="close-btn" onclick="showEmptyError()">&times;</div>
+                    <h1>Помилка</h1>
+                    <p>Будь ласка, введи значення усіх чотирьох координат.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="column a-right">
+                <div class="affine-preferences">
+                    <div class="triangle-container">
+                        <label class="coordinates-title" for="coordinates-triangle">Введи координати вершин
+                            трикутника:</label>
+                        <img class="img-question-item" src='../images/question_mark.png' alt="upload"
+                            onclick="showTip()" />
+
+                        <div class="xy-container">
+                            <p id="affine-x">X</p>
+                            <p id="affine-y">Y</p>
+                        </div>
+
+                        <div class="coordinates-triangle">
+                            <div class="a-b-c">
+                                <label for="AX">A</label>
+                                <input type="number" id="AX" name="AX" min="-10" max="10">
+
+                                <input type="number" id="AY" name="AY" min="-10" max="10">
+                            </div>
+
+                            <div class="a-b-c">
+                                <label for="BX">B</label>
+                                <input type="number" id="BX" name="BX" min="-10" max="10">
+
+                                <input type="number" id="BY" name="BY" min="-10" max="10">
+                            </div>
+                            <div class="a-b-c">
+                                <label for="CX">C</label>
+                                <p id="CX" name="CX"></p>
+
+                                <p id="CY" name="CY"></p>
+                            </div>
+
+
+
+                        </div>
+
+                        <br /><br />
+                        <label class="coordinates-title" for="coordinates-triangle">Розпочати/зупинити рух
+                            трикутника:</label>
+                        <div class="start-stop-div">
+                            <button id="start" type="button">Старт</button>
+                            <button id="stop" type="button">Стоп</button>
+                        </div>
+
+                        <br />
+
+                        <p id="scale-affine"> Масштаб: 100%</p>
+
+                        <label class="coordinates-title" for="coordinates-triangle">Збільшити/зменшити масштаб:</label>
+                        <div class="start-stop-div">
+                            <button id="plus" type="button">
+                                <img class="img-upload-item" src='../images/plus.png' alt="plus" />
+                            </button>
+                            <button id="minus" type="button">
+                                <img class="img-upload-item" src='../images/minus1.png' alt="minus" />
+                            </button>
+                        </div>
+
+                        <button id="download-button-affine" type="button">
+                            <img class="img-upload-item" src='../images/download.png' alt="upload" />
+                            Завантажити результат</button>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+</body>
+<script type="module" src="/scripts/triangle_coordinates.js"></script>
+<script>
+    function showTip() {
+        var x = document.querySelector("#popup-1").classList.toggle("active");
+    }
+</script>
+
+<script>
+
+    function showError() {
+        var x = document.querySelector("#popup-error").classList.toggle("active");
+
+    }
+
+</script>
+
+<script>
+
+    function showEmptyError() {
+        var x1 = document.querySelector("#popup-error-empty").classList.toggle("active");
+    }
+
+</script>
+
+</html>
